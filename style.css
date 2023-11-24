@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --mid-size: 2rem;
+  --sm-size: 1.2rem;
+  --xsm-size: 0.7rem;
+  --xxsm-size: 0.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(195, 194, 194);
+  padding: 1.5rem 2.5rem;
+  width: 22rem;
+  height: 25rem;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-family: "Poppins", sans-serif;
+  padding: var(--mid-size);
+  font-weight: 600;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border-radius: var(--xxsm-size);
+  padding: var(--xsm-size);
+  border: 0.5px solid rgb(195, 194, 194);
+  background-color: hsl(210, 20%, 98%);
+  margin: 3px 0;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+}
+
+.pass-show {
+  position: relative;
+}
+
+.show {
+  position: absolute;
+  top: 20.5rem;
+  left: 50.5rem;
+  /* transform: translate(-50%, -50%); */
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.show:hover {
+  color: hsla(0, 50%, 0%, 0.5);
+}
+
+.submit {
+  background-color: hsl(206, 100%, 49%);
+  padding: 0.6rem;
+  border-radius: var(--xxsm-size);
+  border: none;
+  color: white;
+  margin-top: var(--xsm-size);
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: hsl(216, 100%, 49%);
+}
+
+.small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--sm-size) 0;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.facebook {
+  display: flex;
+}
+
+.facebook .para {
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  color: rgb(56, 70, 130);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.facebook .fa-facebook {
+  margin-top: 4px;
+  font-size: var(--sm-size);
+  color: rgb(56, 70, 130);
+}
+
+.reset {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(56, 70, 130);
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.reset:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: 1px solid rgb(195, 194, 194);
+    padding: var(--sm-size);
+    margin-top: 10px;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.sign p, a {
+    padding: 0 2.5rem;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: hsl(206, 100%, 55%);
+    margin-left: -80px;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: var(--sm-size);
+}
+
+.mobile-stores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--sm-size);
+}
+
+.app-store, .google-play {
+    margin: 0 var(--xsm-size);
+    background-color: black;
+    color: white;
+    width: 8.5rem;
+    border-radius: var(--xxsm-size);
+    padding: var(--xsm-size);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    height: 2.8rem;
+    /* color: red; */
+}
+
+.google-play {
+    width: 9rem;
+}
+
+.fa-apple, .fa-google-play {
+    font-size: 1.8rem;
+    margin: auto 0;
+}
+
+.small-h {
+    margin-left: 30px;
+    margin: auto 0;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 2.5rem;
+}
+
+.small-h small{
+    font-size: var(--xsm-size);
+}
+
+.small-h h5 {
+    font-size: 1.05rem;
+}
+
+.small-s {
+    margin-left: 30px;
+    margin: auto 0;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2.9rem;
+}
+
+
+.small-s small{
+    font-size: var(--xsm-size);
+}
+
+
+.small-s h5 {
+    font-size: 1rem;
+}
